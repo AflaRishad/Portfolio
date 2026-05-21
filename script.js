@@ -1,4 +1,4 @@
-// ── SCROLL ANIMATIONS ──
+
 const observer = new IntersectionObserver((entries) => {
   entries.forEach((entry, i) => {
     if (entry.isIntersecting) {
