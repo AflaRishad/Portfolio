@@ -42,7 +42,9 @@
     <p class="hero-desc">
       I build full-stack applications, backend systems, and real-time computer-vision
       products — from a resume-matching engine to an elephant-detection alert system
-      that protects farmland. Hands-on with Python, Java, Flask, JavaScript, and SQL.
+      that protects farmland. Comfortable debugging across the stack, from Eloquent
+      relationship bugs to frontend-backend route mismatches. Hands-on with Python, Java,
+      Flask, Laravel, JavaScript, TypeScript, and SQL.
     </p>
     <div class="hero-cta">
       <a href="#projects" class="btn-primary">View Projects</a>
@@ -64,14 +66,15 @@
         I'm a Computer Science graduate (B.Tech, June 2026) from College of Engineering
         and Management Punnapra, Kerala, with hands-on experience building
         full-stack web applications, backend systems, and data-driven solutions using
-        <strong>Python, Java, Flask, JavaScript, and SQL</strong> — alongside real-time
-        computer vision and machine learning systems.
+        <strong>Python, Java, Flask, Laravel, JavaScript, TypeScript, and SQL</strong> —
+        alongside real-time computer vision and machine learning systems.
       </p>
       <p>
         I've led teams as IEDC Student Lead, organised technical events as department
         Vice President, and shipped projects that solve real problems — like alerting
         farmers when elephants approach their fields, or matching candidates to roles
-        from a parsed resume.
+        from a parsed resume. I'm equally comfortable debugging a stubborn cross-stack
+        issue as I am explaining it to a non-technical stakeholder.
       </p>
       <p>
         I treat AI tools as collaborators throughout my workflow — accelerating
@@ -98,6 +101,7 @@
         <span class="tag tag-green">Python</span>
         <span class="tag tag-green">Java</span>
         <span class="tag tag-green">JavaScript</span>
+        <span class="tag tag-green">TypeScript</span>
         <span class="tag tag-green">SQL</span>
         <span class="tag tag-green">C</span>
         <span class="tag tag-green">HTML5</span>
@@ -108,9 +112,10 @@
       <div class="skill-group-title">Web Development</div>
       <div class="skill-tags">
         <span class="tag tag-blue">Flask</span>
+        <span class="tag tag-blue">Laravel</span>
         <span class="tag tag-blue">Angular</span>
         <span class="tag tag-blue">Node.js</span>
-        <span class="tag tag-blue">React (Basic)</span>
+        <span class="tag tag-blue">React</span>
         <span class="tag tag-blue">REST APIs</span>
         <span class="tag tag-blue">Responsive Design</span>
         <span class="tag tag-blue">SEO</span>
@@ -120,9 +125,11 @@
       <div class="skill-group-title">Data & Databases</div>
       <div class="skill-tags">
         <span class="tag tag-yellow">SQLite</span>
+        <span class="tag tag-yellow">PostgreSQL</span>
         <span class="tag tag-yellow">OCR</span>
         <span class="tag tag-yellow">Data Processing</span>
         <span class="tag tag-yellow">Database Management</span>
+        <span class="tag tag-yellow">Power BI (familiar)</span>
       </div>
     </div>
     <div class="skill-group">
@@ -143,6 +150,7 @@
         <span class="tag tag-green">YOLOv5</span>
         <span class="tag tag-green">OpenCV</span>
         <span class="tag tag-green">CNN</span>
+        <span class="tag tag-green">Ollama</span>
         <span class="tag tag-green">NumPy</span>
         <span class="tag tag-green">Pandas</span>
       </div>
@@ -155,7 +163,6 @@
         <span class="tag tag-blue">Debugging</span>
         <span class="tag tag-blue">SDLC</span>
         <span class="tag tag-blue">Tkinter</span>
-        <span class="tag tag-blue">Ollama</span>
       </div>
     </div>
   </div>
@@ -179,13 +186,15 @@
       </div>
       <h3>Emotion-Aware Book Recommendation System</h3>
       <p>
-        Real-time facial emotion recognition via CNN with live webcam-based detection.
-        An Ollama-powered chatbot adapts to the user's mood and recommends books,
-        served through a responsive Flask front end consuming REST APIs.
+        Flask app that detects user mood in real time from webcam video (OpenCV Haar
+        Cascade + CNN classifier), reaching 87% accuracy on neutral, 85% on happy, 77% on
+        angry, and 76% on sad emotions. An Ollama-powered Phi3 chatbot uses the detected
+        mood to recommend books, manga, and comics through a responsive front end
+        consuming REST APIs.
       </p>
       <div class="project-stack">
         <span class="stack-tag">Python</span><span class="stack-tag">TensorFlow / Keras</span>
-        <span class="stack-tag">OpenCV</span><span class="stack-tag">Ollama</span>
+        <span class="stack-tag">OpenCV</span><span class="stack-tag">Ollama (Phi3)</span>
         <span class="stack-tag">Flask</span>
       </div>
     </article>
@@ -199,13 +208,14 @@
       </div>
       <h3>Resume Analyzer & Career Recommendation System</h3>
       <p>
-        Full-stack app that parses PDF resumes and matches candidates to roles with a
-        real-time scoring engine. Modular backend, validated outputs, and a responsive
-        dashboard for rankings, skill-gap analysis, and career insights.
+        Fully client-side resume analyzer that parses PDF resumes in-browser and ranks
+        candidates against multiple job roles by skill-match percentage — no backend
+        required. A dynamic, SEO-friendly checklist recalculates the match percentage in
+        real time as users check off skills they've closed the gap on.
       </p>
       <div class="project-stack">
-        <span class="stack-tag">Python</span><span class="stack-tag">Flask</span>
-        <span class="stack-tag">REST APIs</span><span class="stack-tag">JavaScript</span>
+        <span class="stack-tag">JavaScript</span><span class="stack-tag">PDF.js</span>
+        <span class="stack-tag">HTML5</span><span class="stack-tag">CSS3</span>
       </div>
     </article>
 
@@ -218,9 +228,10 @@
       </div>
       <h3>Elephant Detection & SMS Alert System</h3>
       <p>
-        Live video stream processing with YOLOv5 for human-wildlife conflict prevention.
-        At ~85% detection confidence, Twilio dispatches an SMS alert; pipeline optimised
-        for low-latency inference on edge hardware.
+        Real-time computer-vision detection system for human-wildlife conflict
+        prevention, reaching 85% detection confidence with an inference pipeline
+        optimised for low-resource, low-latency deployment. Twilio dispatches an SMS
+        alert instantly on detection in live video streams, enabling a faster response.
       </p>
       <div class="project-stack">
         <span class="stack-tag">Python</span><span class="stack-tag">YOLOv5</span>
@@ -264,6 +275,29 @@
       <div class="project-stack">
         <span class="stack-tag">JavaScript</span><span class="stack-tag">HTML5</span>
         <span class="stack-tag">CSS3</span><span class="stack-tag">LocalStorage</span>
+      </div>
+    </article>
+
+    <article class="project-card project-card-dark">
+      <div class="project-card-head">
+        <span class="project-year">2026</span>
+        <span class="project-spark" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path d="M12 0l2 10 10 2-10 2-2 10-2-10L0 12l10-2z" fill="currentColor"/></svg>
+        </span>
+      </div>
+      <h3>Apollo — Energy Asset Management</h3>
+      <p>
+        Full-stack asset and project management platform: a Laravel 13 (PHP 8.5) REST
+        API with 9 endpoints backing a React + TypeScript frontend, with token-based
+        auth via Laravel Sanctum. A relational data model (Users, Projects, Tasks)
+        supports a full task lifecycle from todo through in-progress to done, with
+        cross-stack issues — including an Eloquent relationship-loading bug and a
+        frontend-backend route mismatch — debugged independently.
+      </p>
+      <div class="project-stack">
+        <span class="stack-tag">Laravel</span><span class="stack-tag">PHP</span>
+        <span class="stack-tag">PostgreSQL</span><span class="stack-tag">React / TypeScript</span>
+        <span class="stack-tag">Sanctum</span>
       </div>
     </article>
 
@@ -316,8 +350,9 @@
       Developed Python applications integrating ML models with backend functionality,
       and AI-driven apps using Flask and computer vision models. Built responsive web
       interfaces with HTML, CSS, and JavaScript ensuring cross-browser compatibility,
-      integrated REST APIs end-to-end, and managed testing, deployment, debugging, and
-      version control with Git and GitHub.
+      integrated REST APIs end-to-end, and debugged and resolved issues across
+      Python/Flask applications integrating ML models — managing version control and
+      release troubleshooting with Git and GitHub.
     </p>
   </div>
 </section>
@@ -358,7 +393,7 @@
 <footer>
   <span>© 2026 Afla Rishad</span>
   <span>Alappuzha, Kerala · Open to Remote</span>
-  <span class="easter-egg-trigger" title="*" id="easterTrigger">·</span>
+  <span class="easter-egg-trigger" title="Take a break? Play a quick game →" id="easterTrigger">🎮</span>
 </footer>
 
 <div id="tttOverlay" class="ttt-overlay" style="display:none;">
@@ -387,3 +422,5 @@
 <script src="script.js"></script>
 </body>
 </html>
+
+
