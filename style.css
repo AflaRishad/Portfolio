@@ -523,6 +523,12 @@ h2 {
   color: var(--muted);
 }
 
+/* Fix: keeps description text readable on the dark green card.
+   Must stay after .project-card p so it wins the cascade. */
+.project-card.project-card-dark p {
+  color: #F5F1E6;
+}
+
 .project-stack {
   display: flex;
   flex-wrap: wrap;
