@@ -586,25 +586,6 @@ h2 {
   font-size: 0.82rem;
 }
 
-.exp-detail {
-  background: var(--green-light);
-  border: 2px solid var(--ink);
-  border-radius: 14px;
-  padding: 2rem 2.25rem;
-}
-
-.exp-detail h3 {
-  font-family: 'Space Grotesk', sans-serif;
-  font-size: 1.05rem;
-  margin-bottom: 0.75rem;
-}
-
-.exp-detail p {
-  font-size: 0.92rem;
-  line-height: 1.8;
-  color: var(--ink);
-}
-
 /* ── CERTIFICATIONS ── */
 
 .cert-grid {
